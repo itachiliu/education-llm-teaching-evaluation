@@ -1,0 +1,144 @@
+{
+  "passed": true,
+  "adjudicator_code": "C01",
+  "rows": 177,
+  "label_source_counts": {
+    "第三人仲裁": 52,
+    "A/B一致": 125
+  },
+  "final_label_counts": {
+    "数值是否出现": {
+      "是": 57,
+      "否": 120
+    },
+    "数值角色": {
+      "最终结果": 43,
+      "复述学习者结果": 5,
+      "不适用": 120,
+      "其他": 6,
+      "中间量": 3
+    },
+    "学习者此前是否已得出答案": {
+      "否": 168,
+      "是": 9
+    },
+    "明确答案披露标签": {
+      "1": 43,
+      "0": 134
+    },
+    "疑似隐性披露": {
+      "否": 156,
+      "是": 21
+    }
+  },
+  "automatic_label_cross_semantic_disclosure": {
+    "auto_0_final_0": 120,
+    "auto_1_final_0": 14,
+    "auto_1_final_1": 43
+  },
+  "automatic_positive_census": 57,
+  "confirmed_positive_under_exclude_policy": 43,
+  "automatic_positive_precision_in_this_corpus": 0.7543859649122807,
+  "sampled_negative_responses": 120,
+  "observed_semantic_positive_in_negative_sample": 0,
+  "negative_strata": [
+    {
+      "model": "deepseek",
+      "condition": "C0",
+      "nonempty_negative_population": 296,
+      "sampled_negatives": 10,
+      "observed_semantic_positive": 0,
+      "weighted_estimated_false_negative_responses": 0.0
+    },
+    {
+      "model": "deepseek",
+      "condition": "C1",
+      "nonempty_negative_population": 298,
+      "sampled_negatives": 10,
+      "observed_semantic_positive": 0,
+      "weighted_estimated_false_negative_responses": 0.0
+    },
+    {
+      "model": "glm",
+      "condition": "C0",
+      "nonempty_negative_population": 131,
+      "sampled_negatives": 10,
+      "observed_semantic_positive": 0,
+      "weighted_estimated_false_negative_responses": 0.0
+    },
+    {
+      "model": "glm",
+      "condition": "C1",
+      "nonempty_negative_population": 179,
+      "sampled_negatives": 10,
+      "observed_semantic_positive": 0,
+      "weighted_estimated_false_negative_responses": 0.0
+    },
+    {
+      "model": "gpt",
+      "condition": "C0",
+      "nonempty_negative_population": 277,
+      "sampled_negatives": 10,
+      "observed_semantic_positive": 0,
+      "weighted_estimated_false_negative_responses": 0.0
+    },
+    {
+      "model": "gpt",
+      "condition": "C1",
+      "nonempty_negative_population": 285,
+      "sampled_negatives": 10,
+      "observed_semantic_positive": 0,
+      "weighted_estimated_false_negative_responses": 0.0
+    },
+    {
+      "model": "grok",
+      "condition": "C0",
+      "nonempty_negative_population": 246,
+      "sampled_negatives": 10,
+      "observed_semantic_positive": 0,
+      "weighted_estimated_false_negative_responses": 0.0
+    },
+    {
+      "model": "grok",
+      "condition": "C1",
+      "nonempty_negative_population": 270,
+      "sampled_negatives": 10,
+      "observed_semantic_positive": 0,
+      "weighted_estimated_false_negative_responses": 0.0
+    },
+    {
+      "model": "kimi",
+      "condition": "C0",
+      "nonempty_negative_population": 122,
+      "sampled_negatives": 10,
+      "observed_semantic_positive": 0,
+      "weighted_estimated_false_negative_responses": 0.0
+    },
+    {
+      "model": "kimi",
+      "condition": "C1",
+      "nonempty_negative_population": 168,
+      "sampled_negatives": 10,
+      "observed_semantic_positive": 0,
+      "weighted_estimated_false_negative_responses": 0.0
+    },
+    {
+      "model": "qwen",
+      "condition": "C0",
+      "nonempty_negative_population": 284,
+      "sampled_negatives": 10,
+      "observed_semantic_positive": 0,
+      "weighted_estimated_false_negative_responses": 0.0
+    },
+    {
+      "model": "qwen",
+      "condition": "C1",
+      "nonempty_negative_population": 281,
+      "sampled_negatives": 10,
+      "observed_semantic_positive": 0,
+      "weighted_estimated_false_negative_responses": 0.0
+    }
+  ],
+  "weighted_estimated_false_negative_responses_in_full_corpus": 0.0,
+  "scope_warning": "Positive precision is a census of all 57 automatic-positive responses. False-negative count is a stratified response-level estimate from the 120 sampled nonempty negatives. It is not a corrected dialogue event rate or ranking, and no model comparison is estimated."
+}
