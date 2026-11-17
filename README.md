@@ -1,13 +1,15 @@
 # Educational LLM Teaching-Evaluation Evidence Audit
 
-This repository contains the minimal reproducibility materials for the manuscript "以人为中心的教育大模型教学能力评测方法综述与有效性分析".
+This repository contains the minimal reproducibility materials for the manuscript "教育大模型教学能力评测与有效性综述".
 
 ## Contents
 
 - `data/final_labels_177.csv`: final response-level semantic labels after independent double annotation and third-party adjudication.
 - `data/adjudication_deidentified.csv`: de-identified label ledger for the 52 disputed or uncertain responses. Dialogue text is omitted; each row carries a SHA-256 fingerprint so a holder of the restricted source package can match it without public redistribution.
 - `data/table1_stress_evidence.csv`: article-level evidence ledger for the Table 1 "answer-solicitation pressure" coding.
+- `data/search_audit.csv`: database, query, date and screening-count record for the review.
 - `results/final_metrics.json`: final label distributions and the response-level comparison with the historical automatic numeric rule.
+- `results/center_claim_audit.csv`: claim-to-evidence map for the 13 acceptance-critical claims.
 - `annotations/annotation_protocol.md`: frozen annotation categories and confirmation policy.
 - `scripts/recompute_metrics.py`: standalone recomputation of headline counts from `final_labels_177.csv`.
 
@@ -20,6 +22,10 @@ python scripts/recompute_metrics.py
 ```
 
 The script uses only the Python standard library. It recomputes the final label distribution and automatic-rule confusion counts. The full stratified false-negative estimate requires the private-to-analysis sample mapping and is retained in the manuscript's supplementary analysis package rather than this minimal public repository.
+
+The review search audit and center-claim evidence map are descriptive records.
+They show what was searched, how records were screened and which evidence
+limits remain; they do not turn the critical review into a systematic review.
 
 ## Data scope
 
@@ -47,7 +53,9 @@ Generative AI assisted literature search and initial screening, and, under autho
 
 ## License
 
-No reuse license has been selected yet. The authors must add an explicit license before public release.
+Source code is released under the MIT License. The de-identified derived data
+are released under CC BY 4.0. Third-party source data are not redistributed
+and remain subject to their original terms.
 
 ## Contact
 
