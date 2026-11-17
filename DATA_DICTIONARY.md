@@ -19,7 +19,14 @@ One row per audited tutor response.
 
 ## `data/adjudication_deidentified.csv`
 
-The adjudicated subset of 52 responses. Annotator and adjudicator identities are replaced by analysis codes.
+The adjudicated subset of 52 responses. Annotator and adjudicator identities are
+replaced by analysis codes. Dialogue text and free-text judgment rationales are
+omitted.
+
+`上下文SHA256` is the lowercase SHA-256 of the UTF-8 text formed by joining
+`题目`, `参考答案`, `完整前文` and `待判导师应答` in that order with the ASCII
+unit-separator character `U+001F`. It enables matching against a restricted
+source package without publishing the underlying text.
 
 ## `data/table1_stress_evidence.csv`
 

@@ -5,7 +5,7 @@ This repository contains the minimal reproducibility materials for the manuscrip
 ## Contents
 
 - `data/final_labels_177.csv`: final response-level semantic labels after independent double annotation and third-party adjudication.
-- `data/adjudication_deidentified.csv`: de-identified adjudication record for the 52 disputed or uncertain responses.
+- `data/adjudication_deidentified.csv`: de-identified label ledger for the 52 disputed or uncertain responses. Dialogue text is omitted; each row carries a SHA-256 fingerprint so a holder of the restricted source package can match it without public redistribution.
 - `data/table1_stress_evidence.csv`: article-level evidence ledger for the Table 1 "answer-solicitation pressure" coding.
 - `results/final_metrics.json`: final label distributions and the response-level comparison with the historical automatic numeric rule.
 - `annotations/annotation_protocol.md`: frozen annotation categories and confirmation policy.
@@ -24,6 +24,8 @@ The script uses only the Python standard library. It recomputes the final label 
 ## Data scope
 
 The repository does not redistribute the original MathDial conversation files or other third-party source data. Those materials should be obtained from their original providers under the applicable data-use terms.
+
+The adjudication ledger contains only analysis IDs, A/B labels, adjudicated labels and a one-way context fingerprint. It does not contain problem statements, reference answers, full dialogue history, tutor responses or free-text evidence quotations.
 
 The repository also excludes:
 
