@@ -3,13 +3,13 @@
   "annotations/annotation_protocol.md": "ce81347dde2c4d0246e3655f84d0385943eb859daa3a8e7f878bb1e47bb34a3f",
   "data/adjudication_deidentified.csv": "c6a39d3d92232fe93ea0526ab7838f3be35b032440909d7d40ea2e88ac5eb0fd",
   "data/final_labels_177.csv": "8582bf62b2cc5f961b7145c1ddb968c86a225deb346edf056b091618bafd6495",
-  "data/search_audit.csv": "ffa7ac0d1544458ec0e12ca501fea5bb6bcfa486b3a2ee20e4680ef9018a4a6c",
+  "data/search_audit.csv": "5ff557a910006c21aee0e7ba5d5f620272d52f7b3878f0fab7e367907a561e36",
   "data/table1_stress_evidence.csv": "6bebb85cec7d108979678b20f133bb3b108f611b6f0a6798442712bdd0fbe43e",
   "DATA_DICTIONARY.md": "4484476451fde562a88ecc7087b03fd6d3ada4b9afcf1cc89a662bb040932b16",
   "LICENSE": "9f1abe28a25b5f6f95c58a81a647de3fa72ff6388d228c59bddd079255709989",
   "LICENSE-DATA.md": "537d67d5cc1f2b70d98328834947351f4879f9208e546f3f25037083afb03822",
   "README.md": "9c2373892b0f6d575eb094101f59ebe0da5a9b548734ee5496c43f6f427f7c12",
-  "results/center_claim_audit.csv": "788032a6c3238473be9ee864c8faf91e1f5bc674435c972f8ce8e208eed4227c",
+  "results/center_claim_audit.csv": "23ccca2d6dc8ee7d42438cb9e6340d190c91d182581e277945e1ef98a2dfc853",
   "results/final_metrics.json": "280a5399bd9be50a54661668dd8173c43f23b49dbff62cd3d995cd87956dec92",
   "scripts/recompute_metrics.py": "7b8b9bb6d610dc09dd4ec9536be00e60c17850b81766c86b636e2dea3e32b063"
 }

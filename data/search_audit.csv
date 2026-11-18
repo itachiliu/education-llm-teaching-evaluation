@@ -1,13 +1,13 @@
-source,search_date,query,raw_returned,screened,notes
-CNKI,2026-11-17,篇名=教育大模型,121,121,题名检索
-CNKI,2026-11-17,篇名=教学能力评测,6,6,题名检索
-OpenAlex,2026-11-17,title.search:"AI tutor"; 2020-01-01至2026-11-17,641,200,按相关度取前200条进入初筛
-OpenAlex,2026-11-17,title.search:"LLM tutor"; 2020-01-01至2026-11-17,74,74,全部进入初筛
-OpenAlex,2026-11-17,title.search:"educational large language model"; 2020-01-01至2026-11-17,8,8,全部进入初筛
-OpenAlex,2026-11-17,title.search:"student simulation" AND abstract contains "large language model"; 2020-01-01至2026-11-17,15,15,全部进入初筛
-OpenAlex,2026-11-17,title.search:"teaching evaluation" AND abstract contains "large language model"; 2020-01-01至2026-11-17,2,2,全部进入初筛
-OpenAlex,2026-11-17,title.search:"teaching quality" AND abstract contains "large language model"; 2020-01-01至2026-11-17,4,4,全部进入初筛
-arXiv,2026-11-17,all:"AI tutor" AND all:evaluation,90,90,全部进入初筛
-arXiv,2026-11-17,all:"LLM tutor" AND all:benchmark,17,17,全部进入初筛
-arXiv,2026-11-17,all:"student simulation" AND all:"large language model",27,27,全部进入初筛
-arXiv,2026-11-17,all:"teaching evaluation" AND all:"large language model",5,5,全部进入初筛
+source,search_date,query,raw_returned,inspection_scope,role
+CNKI,2026-11-17,篇名=教育大模型,121,题名检索结果,discovery_and_gap_check
+CNKI,2026-11-17,篇名=教学能力评测,6,题名检索结果,discovery_and_gap_check
+OpenAlex,2026-11-17,title.search:"AI tutor"; 2020-01-01至2026-11-17,641,相关度排序前列,discovery_and_gap_check
+OpenAlex,2026-11-17,title.search:"LLM tutor"; 2020-01-01至2026-11-17,74,相关度排序结果,discovery_and_gap_check
+OpenAlex,2026-11-17,title.search:"educational large language model"; 2020-01-01至2026-11-17,8,全部题名结果,discovery_and_gap_check
+OpenAlex,2026-11-17,title.search:"student simulation" AND abstract contains "large language model"; 2020-01-01至2026-11-17,15,全部题名结果,discovery_and_gap_check
+OpenAlex,2026-11-17,title.search:"teaching evaluation" AND abstract contains "large language model"; 2020-01-01至2026-11-17,2,全部题名结果,discovery_and_gap_check
+OpenAlex,2026-11-17,title.search:"teaching quality" AND abstract contains "large language model"; 2020-01-01至2026-11-17,4,全部题名结果,discovery_and_gap_check
+arXiv,2026-11-17,all:"AI tutor" AND all:evaluation,90,全部题名结果,discovery_and_gap_check
+arXiv,2026-11-17,all:"LLM tutor" AND all:benchmark,17,全部题名结果,discovery_and_gap_check
+arXiv,2026-11-17,all:"student simulation" AND all:"large language model",27,全部题名结果,discovery_and_gap_check
+arXiv,2026-11-17,all:"teaching evaluation" AND all:"large language model",5,全部题名结果,discovery_and_gap_check
