@@ -1,0 +1,22 @@
+﻿item_id,reference,work,source_url,resource_category_raw,resource_category_aligned,scoring_method_raw,scoring_method_aligned,answer_solicitation_pressure
+1,MathDial[10],MathDial,https://aclanthology.org/2023.findings-emnlp.372.pdf,数据集,数据集,人工+自动指标,混合方法,无
+2,Stepwise Verification[84],Stepwise Verification,https://arxiv.org/pdf/2407.09136,评测研究,系统/评测研究,人工+指标+评判器,混合方法,无
+3,SocraticLM[74],SocraticLM,https://proceedings.neurips.cc/paper_files/paper/2024/file/9bae399d1f34b8650351c1bd3692aeae-Paper-Conference.pdf,系统/评测,系统/评测研究,人工+指标,混合方法,无
+4,LearnLM[85],LearnLM,https://arxiv.org/pdf/2412.16429,系统/评测,系统/评测研究,专家偏好/量规,专家偏好/研判,无
+5,MRBench[9],MRBench,https://aclanthology.org/2025.naacl-long.57.pdf,基准,基准/评测集,人工+评判器,人工标注/专家评分,无
+6,MathTutorBench[11],MathTutorBench,https://aclanthology.org/2025.emnlp-main.11.pdf,基准,基准/评测集,规则+奖励模型,自动指标,无
+7,BEA 2025共享任务[12],BEA 2025 共享任务,https://aclanthology.org/2025.bea-1.77.pdf,共享任务,共享任务,人工金标+评判器,自动指标,无
+8,EduBench[13],EduBench,https://arxiv.org/pdf/2505.16160,基准,基准/评测集,人工校准+评判器,混合方法,无
+9,TutorBench[86],TutorBench,https://arxiv.org/pdf/2510.02663,基准,基准/评测集,量规+评判器,LLM评判,无
+10,SocraticMATH[87],SocraticMATH（CIKM'24）,https://arxiv.org/pdf/2407.17349v1,系统/评测,系统/评测研究,指标+专家+GPT-4,混合方法,无
+11,答案泄露研究[88],答案泄露研究（SIGCSE Virtual 2026，Shah 等，UBC）,https://sigcsevirtual.acm.org/details/sigcse-virtual-2026-papers/33/Answer-Leakage-in-Multi-Turn-AI-Tutoring-for-Computing-Education,评测研究,系统/评测研究,自动评判器,未核实,有
+12,Socratic调试基准[89],Socratic 调试基准,https://aclanthology.org/2023.bea-1.57.pdf,数据集/评测,数据集,人工语义匹配,人工标注/专家评分,无
+13,EduEval[14],EduEval,https://arxiv.org/pdf/2512.00290,基准,基准/评测集,指标+评判器,混合方法,无
+14,LongTutor[16],LongTutor,https://aclanthology.org/2026.acl-long.1371.pdf,基准,基准/评测集,规则+评判器,混合方法,无
+15,Tutor CoPilot[17],Tutor CoPilot,https://arxiv.org/pdf/2410.03017,效果研究,效果研究,随机试验+结果指标,独立测验,无
+16,答案泄露鲁棒性[73],答案泄露鲁棒性（EPFL）,https://arxiv.org/pdf/2604.18660,评测研究,系统/评测研究,规则筛查+评判器,LLM评判,有
+17,K12-Bench[15],K12-KGraph / K12-Bench,https://arxiv.org/pdf/2605.09635,基准,基准/评测集,规则指标,自动指标,不适用
+18,教育公平基准[90],教育公平基准（Scientific Data）,https://www.nature.com/articles/s41597-026-06827-x.pdf,背景数据集,背景资源,不适用,不适用,不适用
+19,WDEAS 0001—2025[19],WDEAS 0001—2025,https://wdec.smartedu.cn/doc/2025/%E3%80%8A%E6%95%99%E8%82%B2%E5%A4%A7%E6%A8%A1%E5%9E%8B%20%E6%80%BB%E4%BD%93%E5%8F%82%E8%80%83%E6%A1%86%E6%9E%B6%E3%80%8B%E8%81%94%E7%9B%9F%E6%A0%87%E5%87%86.pdf,联盟标准,标准/框架,总体参考框架,不适用,不适用
+20,“北极星”V1.0[23],"""北极星""评测场 V1.0",https://ai.bnu.edu.cn/ggjxz/xyxw/e66ba4b52e354f7086dd8082c19ce6c8.htm,公开评测,公开评测/榜单,AI评估+专家研判,混合方法,未核实
+21,StudentBench[29],StudentBench,https://arxiv.org/pdf/2609.28470,结果型评测,效果研究,独立测验+专家评价,独立测验,无

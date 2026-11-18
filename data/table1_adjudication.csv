@@ -1,0 +1,13 @@
+﻿dispute_id,item_id,work,field,coder_A_raw_value,coder_A_aligned_value,coder_B_value,final_value,evidence_quote,exact_location,rationale,adjudicator_code,adjudication_date,status
+D1,12,Socratic调试基准[89],资源类别,数据集/评测,数据集,基准/评测集,基准/评测集,"（1）“To facilitate the automatic evaluation and benchmarking of future Socratic questioning systems in terms of their precision and recall, the dataset contributors are asked to provide all alternative utterances that they think could help the student, at every turn in the conversation.”
+（2）“The dataset serves as a benchmark for evaluating the Socratic debugging capabilities of LMs.”
+（3）第3节标题：“3 Benchmark Dataset”","（1）PDF第2页/印刷710，§1 Introduction末段；
+（2）PDF第9页/印刷717，§6 Conclusion & Limitations；
+（3）PDF第4页/印刷712，§3标题。另见§2 Task Definition（PDF第2—3页/印刷710—711）及§4实验（PDF第5页起/印刷713起）。","双方证据都真实，关键在哪个身份决定主用途。论文明确了固定任务、precision/recall等指标和GPT-3.5与GPT-4模型比较；§2把Socratic debugging形式化，§4.3给出二分图匹配计分，标题、§3标题和结论均称其为benchmark，且未提出训练用途。因此数据结构主要为模型评测而设计，判为“基准/评测集”。
+不能推出该资源属于“公开评测/榜单”，论文没有持续公开榜单；也不能视为已完成的大规模评测，结论说明数据集仍在扩充。",ADJ01,2026-11-18,已完成
+D2,12,Socratic调试基准[89],评分方式,人工语义匹配,人工标注/专家评分,混合方法,混合方法,"（1）“Manual evaluation is performed on all instructor turns from a sample of 5 dialogues, whereas automatic evaluation is performed on the entire dataset. We report the Precision (P), Recall (R), and F1 for the manual evaluation, and BLEU-4, BERT F1, and Rouge-L for the automatic evaluation.”
+（2）“The results of evaluating GPT-3.5 and GPT-4 on the entire benchmark dataset using these automated metrics are shown in Table 2. We observe that there is a correlation in terms of F1 and R between the automatic metrics and the manual metrics.”","（1）PDF第5页/印刷713，表2注；
+（2）PDF第8页/印刷716，§4.3 Automatic Evaluation末段。人工样本量见§4.1（PDF第5页/印刷713）：“We sample a total of 17 instructor turns across 5 dialogues”。","表2是全文唯一主结果表，人工P/R/F1与自动BLEU-4、BERT F1、ROUGE-L并列。人工评价覆盖5段对话的17个导师轮次，自动评价覆盖整个数据集，两者分别承担不同范围的评价。自动指标并非只为验证人工结果；论文用两者在F1和R上的相关性共同支持模型比较，因此符合“两种方式均进入主结果”的冻结标准，判为“混合方法”。
+不能据此认为自动指标可靠，作者明确提示其受代码变量名照搬等问题影响；不能认为人工评价覆盖全数据集；也不能说研究使用了LLM评判。",ADJ02,2026-11-18,已完成
+D3,20,“北极星”V1.0[23],评分方式,AI评估+专家研判,混合方法,未核实,未核实,“经验证，‘北极星’评测结果与具备丰富教学经验的资深教师高度一致。”,北京师范大学人工智能学院《“北极星”基础教育大模型评测场V1.0及榜单正式发布》（2025-07-11），正文第3段末句。,"发布页正文第1—4段只说明学科与场景覆盖、110多个维度、依据T/CESA 1395-2025以及结果与资深教师高度一致；评测平台首页只列出教育专业、教育应用和教育安全三大维度；第四期榜单新闻也未说明评分程序。“与资深教师高度一致”是验证结果，不是评分流程。按冻结规则，辅助验证不自动改变主评分方式，因此判为“未核实”。
+不能推出“没有专家参与”，也不能推出“纯自动评分”。发布页图片文字及T/CESA 1395-2025正文仍未核实。",ADJ03,2026-11-18,已完成

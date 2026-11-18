@@ -1,0 +1,106 @@
+{
+  "sample_unit": "purposefully selected Table 1 resource",
+  "n": 21,
+  "codebook_date": "2026-11-18",
+  "resource_category": {
+    "n": 21,
+    "agreements": 20,
+    "observed_agreement": 0.9523809523809523,
+    "expected_agreement": 0.23129251700680273,
+    "cohen_kappa_unweighted": 0.9380530973451326,
+    "a_counts": {
+      "公开评测/榜单": 1,
+      "共享任务": 1,
+      "基准/评测集": 7,
+      "效果研究": 2,
+      "数据集": 2,
+      "标准/框架": 1,
+      "系统/评测研究": 6,
+      "背景资源": 1
+    },
+    "b_counts": {
+      "公开评测/榜单": 1,
+      "共享任务": 1,
+      "基准/评测集": 8,
+      "效果研究": 2,
+      "数据集": 1,
+      "标准/框架": 1,
+      "系统/评测研究": 6,
+      "背景资源": 1
+    }
+  },
+  "scoring_method": {
+    "n": 21,
+    "agreements": 19,
+    "observed_agreement": 0.9047619047619048,
+    "expected_agreement": 0.20408163265306123,
+    "cohen_kappa_unweighted": 0.8803418803418803,
+    "a_counts": {
+      "LLM评判": 2,
+      "不适用": 2,
+      "专家偏好/研判": 1,
+      "人工标注/专家评分": 2,
+      "未核实": 1,
+      "混合方法": 8,
+      "独立测验": 2,
+      "自动指标": 3
+    },
+    "b_counts": {
+      "LLM评判": 2,
+      "不适用": 2,
+      "专家偏好/研判": 1,
+      "人工标注/专家评分": 1,
+      "未核实": 2,
+      "混合方法": 8,
+      "独立测验": 2,
+      "自动指标": 3
+    }
+  },
+  "answer_solicitation_pressure": {
+    "n": 21,
+    "agreements": 21,
+    "observed_agreement": 1.0,
+    "expected_agreement": 0.5419501133786848,
+    "cohen_kappa_unweighted": 1.0,
+    "a_counts": {
+      "不适用": 3,
+      "无": 15,
+      "有": 2,
+      "未核实": 1
+    },
+    "b_counts": {
+      "不适用": 3,
+      "无": 15,
+      "有": 2,
+      "未核实": 1
+    }
+  },
+  "interpretation": "Descriptive agreement for the 21 purposively selected resources; the values are not a random-sample reliability estimate for the field.",
+  "post_adjudication": {
+    "agreements": 21,
+    "n": 21,
+    "observed_agreement": 1.0,
+    "cohen_kappa_unweighted_if_recomputed": 1.0,
+    "interpretation": "This value is definitional after three disagreements were replaced by adjudicated final values. It must not be reported as a new independent reliability estimate; the pre-adjudication kappa values remain primary."
+  },
+  "adjudicated_disputes": [
+    {
+      "dispute_id": "D1",
+      "item_id": 12,
+      "field": "resource_category",
+      "final_value": "基准/评测集"
+    },
+    {
+      "dispute_id": "D2",
+      "item_id": 12,
+      "field": "scoring_method",
+      "final_value": "混合方法"
+    },
+    {
+      "dispute_id": "D3",
+      "item_id": 20,
+      "field": "scoring_method",
+      "final_value": "未核实"
+    }
+  ]
+}
