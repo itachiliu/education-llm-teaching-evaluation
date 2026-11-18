@@ -2,6 +2,9 @@
 
 This repository contains the minimal reproducibility materials for the manuscript "教育大模型教学能力评测与有效性综述".
 
+Public repository:
+<https://github.com/itachiliu/education-llm-teaching-evaluation>
+
 ## Contents
 
 - `data/final_labels_177.csv`: final response-level semantic labels after independent double annotation and third-party adjudication.
