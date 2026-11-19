@@ -1,7 +1,7 @@
 {
   "sample_unit": "purposefully selected Table 1 resource",
   "n": 21,
-  "codebook_date": "2026-11-18",
+  "codebook_date": "2026-11-19",
   "resource_category": {
     "n": 21,
     "agreements": 20,
@@ -27,6 +27,30 @@
       "标准/框架": 1,
       "系统/评测研究": 6,
       "背景资源": 1
+    }
+  },
+  "observation_unit": {
+    "n": 21,
+    "agreements": 16,
+    "observed_agreement": 0.7619047619047619,
+    "expected_agreement": 0.2018140589569161,
+    "cohen_kappa_unweighted": 0.7017045454545454,
+    "a_counts": {
+      "不适用": 1,
+      "场景/维度任务": 4,
+      "多轮会话": 7,
+      "学习结果": 3,
+      "应答/固定历史": 5,
+      "长期交互历史": 1
+    },
+    "b_counts": {
+      "不适用": 2,
+      "单轮任务": 1,
+      "场景/维度任务": 3,
+      "多轮会话": 4,
+      "学习结果": 2,
+      "应答/固定历史": 8,
+      "长期交互历史": 1
     }
   },
   "scoring_method": {
@@ -75,32 +99,34 @@
       "未核实": 1
     }
   },
-  "interpretation": "Descriptive agreement for the 21 purposively selected resources; the values are not a random-sample reliability estimate for the field.",
-  "post_adjudication": {
-    "agreements": 21,
+  "primary_evidence_endpoint": {
     "n": 21,
-    "observed_agreement": 1.0,
-    "cohen_kappa_unweighted_if_recomputed": 1.0,
-    "interpretation": "This value is definitional after three disagreements were replaced by adjudicated final values. It must not be reported as a new independent reliability estimate; the pre-adjudication kappa values remain primary."
-  },
-  "adjudicated_disputes": [
-    {
-      "dispute_id": "D1",
-      "item_id": 12,
-      "field": "resource_category",
-      "final_value": "基准/评测集"
+    "agreements": 15,
+    "observed_agreement": 0.7142857142857143,
+    "expected_agreement": 0.2585034013605442,
+    "cohen_kappa_unweighted": 0.6146788990825689,
+    "a_counts": {
+      "应答/教学行为质量": 3,
+      "模型分数与比较": 3,
+      "真实学习结果": 2,
+      "背景/公平分析": 1,
+      "规范/架构": 1,
+      "资源与任务构建": 8,
+      "错误诊断/安全行为": 3
     },
-    {
-      "dispute_id": "D2",
-      "item_id": 12,
-      "field": "scoring_method",
-      "final_value": "混合方法"
-    },
-    {
-      "dispute_id": "D3",
-      "item_id": 20,
-      "field": "scoring_method",
-      "final_value": "未核实"
+    "b_counts": {
+      "应答/教学行为质量": 4,
+      "模型分数与比较": 1,
+      "真实学习结果": 2,
+      "规范/架构": 1,
+      "资源与任务构建": 11,
+      "错误诊断/安全行为": 2
     }
-  ]
+  },
+  "total_field_disagreements": 14,
+  "interpretation": "Descriptive pre-adjudication agreement for 21 purposively selected resources; the values are not random-sample reliability estimates for the field.",
+  "post_adjudication": {
+    "missing_codes": 0,
+    "interpretation": "Final values replace disagreements for the Table 1 dataset. The resulting consensus is definitional and must not be reported as a new independent reliability estimate."
+  }
 }

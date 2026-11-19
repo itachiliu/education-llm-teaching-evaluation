@@ -11,11 +11,15 @@ Public repository:
 - `data/adjudication_deidentified.csv`: de-identified label ledger for the 52 disputed or uncertain responses. Dialogue text is omitted; each row carries a SHA-256 fingerprint so a holder of the restricted source package can match it without public redistribution.
 - `data/table1_coding_A.csv`: 21-item Table 1 coding record from coder A, including raw and aligned labels for resource category and scoring method plus answer-solicitation pressure.
 - `data/table1_coding_B.csv`: independent coder B record with raw and aligned labels, evidence excerpts and uncertainty notes.
+- `data/table1_extra_coding_A.csv`: coder A's independent coding of observation unit and primary evidence endpoint.
+- `data/table1_extra_coding_B.csv`: coder B's independent coding of observation unit and primary evidence endpoint, with evidence excerpts and uncertainty notes.
+- `data/table1_extra_coding_C.csv`: the third reviewer's independent pre-adjudication coding of the 11 field-level disagreements.
 - `data/table1_adjudication.csv`: the three disputed Table 1 judgments, final adjudicated values, evidence, locations, rationales and anonymized adjudicator codes.
-- `data/table1_final.csv`: final Table 1 resource categories, main purposes, scoring methods, answer-solicitation pressure and evidence locations after adjudication.
+- `data/table1_adjudication_extra.csv`: the 11 additional observation-unit and primary-endpoint judgments after review of both coders' evidence.
+- `data/table1_final.csv`: final five-field coding, author-summarized learner source and subject/stage, and evidence locations after adjudication.
 - `data/search_audit.csv`: database, query, date and screening-count record for the review.
 - `results/final_metrics.json`: final label distributions and the response-level comparison with the historical automatic numeric rule.
-- `results/table1_kappa.json`: pre-adjudication agreement and unweighted Cohen's kappa for the three doubly coded Table 1 fields.
+- `results/table1_kappa.json`: pre-adjudication agreement and unweighted Cohen's kappa for the five doubly coded Table 1 fields.
 - `results/center_claim_audit.csv`: claim-to-evidence map for the 13 acceptance-critical claims.
 - `annotations/annotation_protocol.md`: frozen annotation categories and confirmation policy.
 - `scripts/recompute_metrics.py`: standalone recomputation of headline counts from `final_labels_177.csv`.
@@ -27,15 +31,15 @@ Run:
 
 ```bash
 python scripts/recompute_metrics.py
-python scripts/recompute_table1_kappa.py
+python scripts/recompute_table1_kappa.py --write-json
 ```
 
 The script uses only the Python standard library. It recomputes the final label distribution and automatic-rule confusion counts. The full stratified false-negative estimate requires the private-to-analysis sample mapping and is retained in the manuscript's supplementary analysis package rather than this minimal public repository.
 
 The Table 1 script uses only the Python standard library and reports
-resource-category, scoring-method and answer-solicitation-pressure agreement
-for the 21 purposively selected resources. The sample is not a random sample
-of the field.
+resource-category, observation-unit, scoring-method, answer-solicitation-pressure
+and primary-evidence-endpoint agreement for the 21 purposively selected
+resources. The sample is not a random sample of the field.
 
 The review search audit and center-claim evidence map are descriptive records.
 They show what was searched, how records were screened and which evidence
@@ -67,10 +71,13 @@ Under the pre-specified exclusion policy, confirmations of an answer already exp
 
 For Table 1, the two coders had 20/21 agreement on resource category
 (unweighted Cohen's kappa 0.938), 19/21 agreement on scoring method
-(kappa 0.880) and 21/21 agreement on answer-solicitation pressure
-(kappa 1.000). Three field judgments were adjudicated. These descriptive
-values apply only to the 21 purposively selected resources and are not a
-field-level reliability estimate.
+(kappa 0.880), 21/21 agreement on answer-solicitation pressure (kappa 1.000),
+16/21 agreement on observation unit (kappa 0.702), and 15/21 agreement on
+primary evidence endpoint (kappa 0.615). Fourteen field judgments were
+adjudicated in total. These descriptive values apply only to the 21
+purposively selected resources and are not a field-level reliability estimate.
+After adjudication, the final labels are complete; the resulting consensus is
+definitional and is not a new independent reliability estimate.
 
 ## Ethics and AI assistance
 

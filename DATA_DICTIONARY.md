@@ -51,6 +51,24 @@ One row per Table 1 resource for coder B. It includes the final labels,
 published-source evidence excerpts and uncertainty notes. The evidence field
 may contain short quotations from public papers or institutional pages.
 
+## `data/table1_extra_coding_A.csv`
+
+One row per resource for coder A's blinded coding of observation unit and
+primary evidence endpoint. Each row includes the source link, suggested
+location, selected codes, direct evidence and uncertainty note. The coder code
+is `A`; names are excluded.
+
+## `data/table1_extra_coding_B.csv`
+
+The corresponding independent record from coder B. Item order was independently
+randomized in the working workbook and restored to `item_id` for comparison.
+
+## `data/table1_extra_coding_C.csv`
+
+The third reviewer's independent pre-adjudication coding for the 11 field-level
+disagreements. The file records the initial code, evidence, uncertainty and
+completion status. The reviewer is represented only by `ADJ03`.
+
 ## `data/table1_adjudication.csv`
 
 The three judgments that differed after label alignment. Adjudicator identities
@@ -58,17 +76,28 @@ are represented only by `ADJ01`, `ADJ02` and `ADJ03`. The file records the raw
 A value, aligned A value, B value, final value, evidence quotation, exact
 location, rationale, date and status.
 
+## `data/table1_adjudication_extra.csv`
+
+The 11 adjudications needed after adding observation unit and primary evidence
+endpoint. Each row records the A/B values, final value, direct evidence, exact
+location, rationale, inferential limits, source URL, completion date and the
+anonymized adjudicator code `ADJ03`.
+
 ## `data/table1_final.csv`
 
-The adjudicated Table 1 record. `status` distinguishes items that were already
-aligned from item-level decisions settled by adjudication.
+The adjudicated Table 1 record. It includes all five doubly coded fields,
+learner source, subject/stage, main purpose and primary evidence location.
+The field-specific pre-adjudication and adjudicated columns preserve the
+original A/B decisions and the final values. `coding_provenance` identifies
+the disagreements settled by adjudication.
 
 ## `results/table1_kappa.json`
 
 Pre-adjudication agreement and unweighted Cohen's kappa for resource category,
-scoring method and answer-solicitation pressure. The file also states that
-post-adjudication agreement of 21/21 is definitional and must not be treated as
-a new independent reliability estimate.
+observation unit, scoring method, answer-solicitation pressure and primary
+evidence endpoint. The file reports 14 field-level disagreements in total and
+states that post-adjudication completeness is definitional and must not be
+treated as a new independent reliability estimate.
 
 ## `results/final_metrics.json`
 
